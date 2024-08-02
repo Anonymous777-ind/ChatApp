@@ -1,0 +1,106 @@
+.dashboard{
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 10%);
+    box-shadow: 0 8px 29.3px 0 #0E1A2C0F;
+}
+
+.user-listings-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px 10px;
+    border-right: 1px solid rgb(0, 0, 0, 10%);
+}
+
+.chats-container{
+    padding: 20px 16px;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chats-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-radius: 12px 12px 0px 0px;
+    border: 0.5px solid rgb(169, 169, 169);
+}
+
+.chats-header h6{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.chats-header img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.chats-body{
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    background-image: url('https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    border: 0.5px solid black;
+}
+
+.chats-input{
+    width: 100%;
+    height: 80px;
+    border: 0.5px solid rgb(169, 169, 169);
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.form{
+    width: 100%;
+}
+.form div{
+    padding: 0;
+}
+.form input{
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-left: 10px;
+}
+
+.send-btn{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
+    padding: 2px;
+    border: none;
+    background-color: #505050;
+}
+
+.send-btn i{
+    width: 100%;
+}

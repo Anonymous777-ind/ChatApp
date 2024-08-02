@@ -1,0 +1,39 @@
+<main class="container dashboard row col-12">
+        <aside class="user-listings-container col-md-4">
+                @for (item of allUserData; track $index) {
+                <app-user-card [username]="item.fullname" (click)="selectUser(item)" />
+                }
+        </aside>
+        <section class="chats-container col-md-8">
+                <p [hidden]="isChatOpen">Your chats will appear here.</p>
+                <!-- <div>
+                        @for (item of messageArray; track $index) {
+                                <div>{{ item }}</div>
+                        }
+                        <input [(ngModel)]="messageText" placeholder="Type your message here" />
+                        <button (click)="sendMessage()">Send</button>
+                </div> -->
+                <div class="chats" [hidden]="!isChatOpen">
+                        <div class="chats-header">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jifLXKb2qo_5aXh54USNlvxI34oPpG3zTw&s"
+                                        alt="" />
+                                <h5>{{ selectedUser }}</h5>
+                        </div>
+                        <div class="chats-body"></div>
+                        <div class="chats-input">
+                                <form class="form row">
+                                        <div class="col-md-9">
+                                                <input type="text" class="form-control" id="messageInput"
+                                                        placeholder="Type a message here" />
+                                        </div>
+                                        <div class="col-3">
+                                                <button  class="send-btn" type="submit">
+                                                        <i class="fa-solid fa-paper-plane fa-lg"
+                                                                style="color: #ffffff"></i>
+                                                </button>
+                                        </div>
+                                </form>
+                        </div>
+                </div>
+        </section>
+</main>
